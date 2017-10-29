@@ -14,6 +14,12 @@ public class Calculator extends HttpServlet {
 		int b= Integer.parseInt(req.getParameter("number2"));
 		int c= (a/b);
 		System.out.println(c);
+		System.out.println("tesinng git");
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("post method executed");
 	}
 
 	
